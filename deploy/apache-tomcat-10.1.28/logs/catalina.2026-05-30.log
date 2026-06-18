@@ -1,0 +1,151 @@
+30-May-2026 02:19:29.347 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+30-May-2026 02:19:29.348 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:535)
+		at java.base/sun.nio.ch.Net.connect(Net.java:524)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:574)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:282)
+		at java.base/java.net.Socket.connect(Socket.java:665)
+		at java.base/java.net.Socket.connect(Socket.java:603)
+		at java.base/java.net.Socket.<init>(Socket.java:470)
+		at java.base/java.net.Socket.<init>(Socket.java:276)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:653)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:393)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+30-May-2026 02:19:35.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.28
+30-May-2026 02:19:35.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 2 2024 15:14:43 UTC
+30-May-2026 02:19:35.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.28.0
+30-May-2026 02:19:35.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-May-2026 02:19:35.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-May-2026 02:19:35.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2026 02:19:35.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+30-May-2026 02:19:35.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+30-May-2026 02:19:35.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-May-2026 02:19:35.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28
+30-May-2026 02:19:35.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28
+30-May-2026 02:19:35.121 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\bin\..\conf\logging.properties
+30-May-2026 02:19:35.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2026 02:19:35.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2026 02:19:35.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2026 02:19:35.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2026 02:19:35.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2026 02:19:35.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-May-2026 02:19:35.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-May-2026 02:19:35.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2026 02:19:35.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\bin\..
+30-May-2026 02:19:35.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\bin\..
+30-May-2026 02:19:35.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\bin\..\temp
+30-May-2026 02:19:35.132 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\cloudflared\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Muse Hub\lib;C:\Program Files\nodejs\;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\adonis\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\adonis\AppData\Local\Programs\Python\Python39\;C:\Users\adonis\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\adonis\AppData\Local\Programs\Python\Python310\;C:\Users\adonis\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\adonis\AppData\Local\Programs\Python\Python312\;C:\Users\adonis\AppData\Local\Microsoft\WindowsApps;C:\Users\adonis\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\adonis\AppData\Local\PowerToys\;C:\Program Files\Google\Chrome\Application;C:\Users\adonis\AppData\Local\Programs\Antigravity\bin;C:\Users\adonis\Documents\ffmpeg\ffmpeg-7.1.1-full_build-shared\bin;C:\Users\adonis\AppData\Local\GitHubDesktop\bin;C:\mingw64\bin;C:\Program Files\Java\jdk-24\bin;C:\Users\adonis\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\adonis\AppData\Local\Muse Hub\lib;C:\Users\adonis\AppData\Roaming\npm;C:\Users\adonis\AppData\Local\Android\Sdk\platform-tools;C:\Users\adonis\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\adonis\.lmstudio\bin;c:\Users\adonis\.antigravity-ide\extensions\vscjava.vscode-java-debug-0.59.0-universal\bundled\scripts\noConfigScripts;.]
+30-May-2026 02:19:35.330 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2026 02:19:35.352 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [404] milliseconds
+30-May-2026 02:19:35.407 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2026 02:19:35.407 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.28]
+30-May-2026 02:19:35.423 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\Lottery.war]
+30-May-2026 02:19:36.505 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2026 02:19:36.615 INFO [main] com.lottery.LotteryScheduler.contextInitialized LotteryScheduler initialized. First draw in 23386 ms.
+30-May-2026 02:19:36.641 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\Lottery.war] has finished in [1,217] ms
+30-May-2026 02:19:36.641 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\docs]
+30-May-2026 02:19:36.683 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2026 02:19:36.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\docs] has finished in [45] ms
+30-May-2026 02:19:36.687 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\examples]
+30-May-2026 02:19:36.934 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2026 02:19:36.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\examples] has finished in [309] ms
+30-May-2026 02:19:36.996 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\host-manager]
+30-May-2026 02:19:37.033 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2026 02:19:37.040 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\host-manager] has finished in [44] ms
+30-May-2026 02:19:37.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\manager]
+30-May-2026 02:19:37.078 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2026 02:19:37.081 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\manager] has finished in [39] ms
+30-May-2026 02:19:37.081 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\ROOT]
+30-May-2026 02:19:37.111 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2026 02:19:37.113 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\ROOT] has finished in [32] ms
+30-May-2026 02:19:37.115 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2026 02:19:37.130 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1776] milliseconds
+30-May-2026 02:19:54.521 INFO [http-nio-8080-exec-5] com.lottery.util.LogHelper.info [getAllPublishedCompanies] Getting all published companies
+30-May-2026 02:19:54.561 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:19:55.503 INFO [http-nio-8080-exec-5] com.lottery.db.LotteryTicketDAO.getAllPublishedCompanies Retrieved 11 published companies
+30-May-2026 02:19:55.504 INFO [http-nio-8080-exec-5] com.lottery.util.LogHelper.info [getAllDistinctCompanies] Getting all distinct companies
+30-May-2026 02:19:55.504 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:19:55.577 INFO [http-nio-8080-exec-5] com.lottery.db.LotteryTicketDAO.getAllDistinctCompanies Retrieved 11 distinct companies
+30-May-2026 02:19:55.577 INFO [http-nio-8080-exec-5] com.lottery.util.LogHelper.info [processUserLotterySearch] Processing user lottery search
+30-May-2026 02:19:55.582 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:19:55.608 INFO [http-nio-8080-exec-5] com.lottery.db.LotteryTicketDAO.searchTickets Found 10 tickets matching search criteria
+30-May-2026 02:19:55.608 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:19:55.652 INFO [http-nio-8080-exec-5] com.lottery.db.LotteryTicketDAO.getSearchTicketCount Counted 531441 tickets matching search criteria
+30-May-2026 02:19:55.654 INFO [http-nio-8080-exec-5] com.lottery.util.LogHelper.info [processUserLotterySearch] User lottery search processed successfully. Found 10 tickets.
+30-May-2026 02:19:55.654 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:19:55.666 INFO [http-nio-8080-exec-5] com.lottery.db.LotteryTicketDAO.incrementViewCountBatch Batch incremented view count for 10 tickets
+30-May-2026 02:20:00.002 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:00.036 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:00.060 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:00.071 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+30-May-2026 02:20:00.071 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:03.849 INFO [http-nio-8080-exec-7] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:03.871 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 531441
+30-May-2026 02:20:03.871 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:03.887 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1639
+30-May-2026 02:20:04.075 INFO [http-nio-8080-exec-7] com.lottery.util.LogHelper.info [updateLastLoginDate] Updating last login date for email: user@gmail.com
+30-May-2026 02:20:04.075 INFO [http-nio-8080-exec-7] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:04.087 INFO [http-nio-8080-exec-7] com.lottery.util.LogHelper.info [updateLastLoginDate] Last login date updated successfully for email: user@gmail.com
+30-May-2026 02:20:04.087 INFO [http-nio-8080-exec-7] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:04.099 INFO [http-nio-8080-exec-4] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:04.108 INFO [http-nio-8080-exec-4] com.lottery.util.LogHelper.info [processUserLotterySearch] Processing user lottery search
+30-May-2026 02:20:04.109 INFO [http-nio-8080-exec-4] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:04.178 INFO [http-nio-8080-exec-4] com.lottery.db.LotteryTicketDAO.searchTickets Found 10 tickets matching search criteria
+30-May-2026 02:20:04.179 INFO [http-nio-8080-exec-4] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:04.236 INFO [http-nio-8080-exec-4] com.lottery.db.LotteryTicketDAO.getSearchTicketCount Counted 531441 tickets matching search criteria
+30-May-2026 02:20:04.236 INFO [http-nio-8080-exec-4] com.lottery.util.LogHelper.info [processUserLotterySearch] User lottery search processed successfully. Found 10 tickets.
+30-May-2026 02:20:04.237 INFO [http-nio-8080-exec-4] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:04.253 INFO [http-nio-8080-exec-4] com.lottery.db.LotteryTicketDAO.incrementViewCountBatch Batch incremented view count for 10 tickets
+30-May-2026 02:20:04.255 INFO [http-nio-8080-exec-4] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:04.267 INFO [http-nio-8080-exec-4] com.lottery.util.LogHelper.info [getAllPublishedCompanies] Getting all published companies
+30-May-2026 02:20:04.267 INFO [http-nio-8080-exec-4] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:04.408 INFO [http-nio-8080-exec-4] com.lottery.db.LotteryTicketDAO.getAllPublishedCompanies Retrieved 11 published companies
+30-May-2026 02:20:04.409 INFO [http-nio-8080-exec-4] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:13.777 INFO [http-nio-8080-exec-3] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:13.798 INFO [http-nio-8080-exec-3] com.lottery.util.LogHelper.info [getAllPublishedCompanies] Getting all published companies
+30-May-2026 02:20:13.798 INFO [http-nio-8080-exec-3] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:14.000 INFO [http-nio-8080-exec-3] com.lottery.db.LotteryTicketDAO.getAllPublishedCompanies Retrieved 11 published companies
+30-May-2026 02:20:20.457 INFO [http-nio-8080-exec-6] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:20.480 INFO [http-nio-8080-exec-6] com.lottery.util.LogHelper.info [getAllPublishedCompanies] Getting all published companies
+30-May-2026 02:20:20.480 INFO [http-nio-8080-exec-6] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:20.605 INFO [http-nio-8080-exec-6] com.lottery.db.LotteryTicketDAO.getAllPublishedCompanies Retrieved 11 published companies
+30-May-2026 02:20:21.993 INFO [http-nio-8080-exec-10] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:22.016 INFO [http-nio-8080-exec-10] com.lottery.util.LogHelper.info [processUserTickets] Processing user tickets retrieval for user ID: 2
+30-May-2026 02:20:22.016 INFO [http-nio-8080-exec-10] com.lottery.util.LogHelper.info [getUserTickets] Getting tickets for user ID: 2
+30-May-2026 02:20:22.016 INFO [http-nio-8080-exec-10] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:22.025 INFO [http-nio-8080-exec-10] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:22.047 INFO [http-nio-8080-exec-10] com.lottery.db.LotteryTicketDAO.searchTickets Found 0 tickets matching search criteria
+30-May-2026 02:20:22.048 INFO [http-nio-8080-exec-10] com.lottery.util.LogHelper.info [getUserTicketCount] Getting ticket count for user ID: 2
+30-May-2026 02:20:22.048 INFO [http-nio-8080-exec-10] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:22.056 INFO [http-nio-8080-exec-10] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:22.082 INFO [http-nio-8080-exec-10] com.lottery.db.LotteryTicketDAO.getSearchTicketCount Counted 0 tickets matching search criteria
+30-May-2026 02:20:22.083 INFO [http-nio-8080-exec-10] com.lottery.util.LogHelper.info [processUserTickets] User tickets retrieval processed successfully for user ID: 2. Found 0 tickets.
+30-May-2026 02:20:22.085 INFO [http-nio-8080-exec-10] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:22.099 INFO [http-nio-8080-exec-10] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:22.120 INFO [http-nio-8080-exec-10] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+30-May-2026 02:20:34.370 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-May-2026 02:20:34.374 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-May-2026 02:20:34.393 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lottery] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-May-2026 02:20:34.400 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-May-2026 02:20:34.408 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-May-2026 03:15:57.568 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+30-May-2026 03:15:57.570 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:535)
+		at java.base/sun.nio.ch.Net.connect(Net.java:524)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:574)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:282)
+		at java.base/java.net.Socket.connect(Socket.java:665)
+		at java.base/java.net.Socket.connect(Socket.java:603)
+		at java.base/java.net.Socket.<init>(Socket.java:470)
+		at java.base/java.net.Socket.<init>(Socket.java:276)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:653)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:393)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)

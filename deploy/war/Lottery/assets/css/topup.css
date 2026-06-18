@@ -1,0 +1,62 @@
+
+
+.card {
+  margin: 20px;
+}
+
+.amount-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.amount-btn {
+  min-width: 100px;
+  height: 100px;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .amount-btn {
+    min-width: 80px;
+    height: 80px;
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 5px;
+    padding: 15px;
+  }
+  
+  .amount-btn-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .amount-btn {
+    width: 100%;
+    min-width: unset;
+    height: 45px;
+    font-size: 1.1em;
+    padding: 5px;
+  }
+
+  
+  .amount-btn:nth-child(7) {
+    grid-column: 1 / -1;
+  }
+
+  .lottery-select {
+    height: auto !important;
+    min-height: 60px;
+    padding: 15px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}

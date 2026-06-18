@@ -1,0 +1,277 @@
+
+
+.payment-method-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #222538;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-method-table th,
+.payment-method-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #3a3f5a;
+}
+
+.payment-method-table th {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffc107;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.form-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.btn-primary {
+  background-color: #e6007a;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #c00065;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #1a1a2e;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.pagination .lottery-btn,
+.pagination a.lottery-btn {
+  padding: 8px 15px;
+  border: 1px solid #3a3f5a;
+  border-radius: 20px;
+  background-color: #222538;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 36px;
+  line-height: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transform: none;
+}
+
+.pagination .lottery-btn:hover,
+.pagination a.lottery-btn:hover,
+.pagination .lottery-btn.active,
+.pagination a.lottery-btn.active {
+  background-color: #ffc107;
+  color: #1a1a2e;
+  transform: translateY(-2px);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #3a3f5a;
+  border-radius: 6px;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #ffc107;
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #222538;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #3a3f5a;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ffc107;
+}
+
+@media (max-width: 1024px) {
+  .modal-content {
+    width: 85%;
+    margin: 15% auto;
+    padding: 15px;
+  }
+
+  
+  .payment-method-table,
+  .payment-method-table tbody {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .payment-method-table thead {
+    display: none;
+  }
+
+  .payment-method-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border: 1px solid #3a3f5a;
+    border-radius: 8px;
+    background-color: #222538;
+    padding: 12px;
+    gap: 0;
+  }
+
+  .payment-method-table td {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .payment-method-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #ffc107;
+    font-size: 0.8em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  
+  .payment-method-table td[data-label="Select"] {
+    display: none;
+  }
+
+  .payment-method-table td input[type="checkbox"] {
+    margin-left: 0;
+  }
+
+  .actions-container {
+    min-width: 125px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+    padding: 10px;
+  }
+
+  
+  .payment-method-table td {
+    width: 50%;
+  }
+
+  .payment-method-table {
+    font-size: 0.8em;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+
+  .actions-header {
+    height: 28px !important;
+    padding: 0 6px !important;
+    font-size: 10px !important;
+    min-width: 60px !important;
+  }
+
+  .action-item {
+    height: 30px !important;
+    padding: 0 8px !important;
+    font-size: 10px !important;
+  }
+}

@@ -1,0 +1,204 @@
+26-Mar-2026 14:05:57.991 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+26-Mar-2026 14:05:57.993 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:535)
+		at java.base/sun.nio.ch.Net.connect(Net.java:524)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:574)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:282)
+		at java.base/java.net.Socket.connect(Socket.java:665)
+		at java.base/java.net.Socket.connect(Socket.java:603)
+		at java.base/java.net.Socket.<init>(Socket.java:470)
+		at java.base/java.net.Socket.<init>(Socket.java:276)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:653)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:393)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+26-Mar-2026 14:06:04.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.28
+26-Mar-2026 14:06:04.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 2 2024 15:14:43 UTC
+26-Mar-2026 14:06:04.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.28.0
+26-Mar-2026 14:06:04.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+26-Mar-2026 14:06:04.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+26-Mar-2026 14:06:04.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2026 14:06:04.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+26-Mar-2026 14:06:04.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+26-Mar-2026 14:06:04.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2026 14:06:04.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28
+26-Mar-2026 14:06:04.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28
+26-Mar-2026 14:06:04.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\bin\..\conf\logging.properties
+26-Mar-2026 14:06:04.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2026 14:06:04.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Mar-2026 14:06:04.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Mar-2026 14:06:04.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Mar-2026 14:06:04.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Mar-2026 14:06:04.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+26-Mar-2026 14:06:04.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+26-Mar-2026 14:06:04.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Mar-2026 14:06:04.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\bin\..
+26-Mar-2026 14:06:04.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\bin\..
+26-Mar-2026 14:06:04.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\bin\..\temp
+26-Mar-2026 14:06:04.843 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\adonis\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\adonis\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\adonis\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\cloudflared\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Muse Hub\lib;C:\Program Files\nodejs\;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\adonis\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\adonis\AppData\Local\Programs\Python\Python39\;C:\Users\adonis\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\adonis\AppData\Local\Programs\Python\Python310\;C:\Users\adonis\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\adonis\AppData\Local\Programs\Python\Python312\;C:\Users\adonis\AppData\Local\Microsoft\WindowsApps;C:\Users\adonis\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\adonis\AppData\Local\PowerToys\;C:\Program Files\Google\Chrome\Application;C:\Users\adonis\AppData\Local\Programs\Antigravity\bin;C:\Users\adonis\Documents\ffmpeg\ffmpeg-7.1.1-full_build-shared\bin;C:\Users\adonis\AppData\Local\GitHubDesktop\bin;C:\mingw64\bin;C:\Program Files\Java\jdk-24\bin;C:\Users\adonis\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\adonis\AppData\Local\Muse Hub\lib;C:\Users\adonis\AppData\Roaming\npm;c:\Users\adonis\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.]
+26-Mar-2026 14:06:05.402 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Mar-2026 14:06:05.472 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [997] milliseconds
+26-Mar-2026 14:06:05.808 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Mar-2026 14:06:05.808 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.28]
+26-Mar-2026 14:06:05.835 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\Lottery.war]
+26-Mar-2026 14:06:08.108 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2026 14:06:08.461 INFO [main] com.lottery.LotteryScheduler.contextInitialized LotteryScheduler initialized. First draw in 231542 ms.
+26-Mar-2026 14:06:08.518 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\Lottery.war] has finished in [2,681] ms
+26-Mar-2026 14:06:08.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\docs]
+26-Mar-2026 14:06:08.626 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2026 14:06:08.635 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\docs] has finished in [115] ms
+26-Mar-2026 14:06:08.635 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\examples]
+26-Mar-2026 14:06:09.536 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2026 14:06:09.648 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\examples] has finished in [1,013] ms
+26-Mar-2026 14:06:09.649 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\host-manager]
+26-Mar-2026 14:06:09.722 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2026 14:06:09.735 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\host-manager] has finished in [86] ms
+26-Mar-2026 14:06:09.736 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\manager]
+26-Mar-2026 14:06:09.814 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2026 14:06:09.818 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\manager] has finished in [81] ms
+26-Mar-2026 14:06:09.818 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\ROOT]
+26-Mar-2026 14:06:09.865 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2026 14:06:09.873 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\adonis\Documents\Projects\Lottery\deploy\apache-tomcat-10.1.28\webapps\ROOT] has finished in [54] ms
+26-Mar-2026 14:06:09.877 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Mar-2026 14:06:09.904 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4425] milliseconds
+26-Mar-2026 14:07:53.474 INFO [http-nio-8080-exec-1] com.lottery.service.BaseService.logInfo [getAllPublishedCompanies] Getting all published companies
+26-Mar-2026 14:07:53.583 INFO [http-nio-8080-exec-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:07:54.247 INFO [http-nio-8080-exec-1] com.lottery.db.LotteryTicketDAO.getAllPublishedCompanies Retrieved 7 published companies
+26-Mar-2026 14:07:54.248 INFO [http-nio-8080-exec-1] com.lottery.service.BaseService.logInfo [getAllDistinctCompanies] Getting all distinct companies
+26-Mar-2026 14:07:54.249 INFO [http-nio-8080-exec-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:07:54.298 INFO [http-nio-8080-exec-1] com.lottery.db.LotteryTicketDAO.getAllDistinctCompanies Retrieved 7 distinct companies
+26-Mar-2026 14:07:54.300 INFO [http-nio-8080-exec-1] com.lottery.service.BaseService.logInfo [processUserLotterySearch] Processing user lottery search
+26-Mar-2026 14:07:54.314 INFO [http-nio-8080-exec-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:07:54.429 INFO [http-nio-8080-exec-1] com.lottery.db.LotteryTicketDAO.searchTickets Found 10 tickets matching search criteria
+26-Mar-2026 14:07:54.430 INFO [http-nio-8080-exec-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:07:54.468 INFO [http-nio-8080-exec-1] com.lottery.db.LotteryTicketDAO.getSearchTicketCount Counted 1000 tickets matching search criteria
+26-Mar-2026 14:07:54.470 INFO [http-nio-8080-exec-1] com.lottery.service.BaseService.logInfo [processUserLotterySearch] User lottery search processed successfully. Found 10 tickets.
+26-Mar-2026 14:07:54.471 INFO [http-nio-8080-exec-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:07:54.513 INFO [http-nio-8080-exec-1] com.lottery.db.LotteryTicketDAO.incrementViewCountBatch Batch incremented view count for 10 tickets
+26-Mar-2026 14:08:00.357 INFO [http-nio-8080-exec-5] com.lottery.service.BaseService.logInfo [validateUser] Validating user: admin@gmail.com
+26-Mar-2026 14:08:00.362 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:08:00.397 INFO [http-nio-8080-exec-5] com.lottery.service.BaseService.logInfo [validateUser] User validation successful for: admin@gmail.com
+26-Mar-2026 14:08:00.399 INFO [http-nio-8080-exec-5] com.lottery.util.SessionManager.createSecureSession Created secure session for user: admin@gmail.com with session ID: F660FEC7182064E4AA676C0C63003693
+26-Mar-2026 14:08:00.399 INFO [http-nio-8080-exec-5] com.lottery.service.BaseService.logInfo [updateLastLoginDate] Updating last login date for email: admin@gmail.com
+26-Mar-2026 14:08:00.400 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:08:00.416 INFO [http-nio-8080-exec-5] com.lottery.service.BaseService.logInfo [updateLastLoginDate] Last login date updated successfully for email: admin@gmail.com
+26-Mar-2026 14:08:00.416 INFO [http-nio-8080-exec-5] com.lottery.service.BaseService.logInfo [getUserByEmail] Retrieving user by email: admin@gmail.com
+26-Mar-2026 14:08:00.416 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:08:00.461 INFO [http-nio-8080-exec-8] com.lottery.service.BaseService.logInfo [getUserByEmail] Retrieving user by email: admin@gmail.com
+26-Mar-2026 14:08:00.462 INFO [http-nio-8080-exec-8] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:08:00.477 INFO [http-nio-8080-exec-8] com.lottery.service.BaseService.logInfo [getAllUsers] Retrieving all users with offset: 0, limit: 20
+26-Mar-2026 14:08:00.478 INFO [http-nio-8080-exec-8] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:08:00.498 INFO [http-nio-8080-exec-8] com.lottery.service.BaseService.logInfo [getUserCount] Getting user count
+26-Mar-2026 14:08:00.498 INFO [http-nio-8080-exec-8] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:08:04.033 INFO [http-nio-8080-exec-5] com.lottery.service.BaseService.logInfo [getUserByEmail] Retrieving user by email: admin@gmail.com
+26-Mar-2026 14:08:04.034 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:08:04.061 INFO [http-nio-8080-exec-5] com.lottery.service.BaseService.logInfo [getAllTransactions] Getting all transactions (admin)
+26-Mar-2026 14:08:04.068 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:08:04.107 INFO [http-nio-8080-exec-5] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:10:00.009 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:10:00.053 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:10:00.085 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:10:00.120 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 14:10:00.122 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:10:00.196 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 14:10:00.197 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:10:00.246 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1451
+26-Mar-2026 14:20:00.004 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:20:00.040 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:20:00.068 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:20:00.104 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 14:20:00.105 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:20:00.167 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 14:20:00.168 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:20:00.193 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1452
+26-Mar-2026 14:30:00.005 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:30:00.050 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:30:00.077 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:30:00.111 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 14:30:00.112 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:30:00.160 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 14:30:00.161 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:30:00.185 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1453
+26-Mar-2026 14:40:00.007 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:40:00.038 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:40:00.085 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:40:00.148 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 14:40:00.148 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:40:00.249 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 14:40:00.249 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:40:00.282 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1454
+26-Mar-2026 14:50:00.006 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:50:00.061 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:50:00.075 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:50:00.091 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 14:50:00.092 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:50:00.155 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 14:50:00.155 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 14:50:00.179 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1455
+26-Mar-2026 15:00:00.007 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:00:00.048 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:00:00.073 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:00:00.119 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 15:00:00.120 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:00:00.169 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 15:00:00.170 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:00:00.191 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1456
+26-Mar-2026 15:10:00.010 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:10:00.053 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:10:00.091 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:10:00.125 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 15:10:00.125 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:10:00.176 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 15:10:00.177 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:10:00.208 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1457
+26-Mar-2026 15:20:00.009 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:20:00.058 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:20:00.090 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:20:00.134 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 15:20:00.135 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:20:00.189 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 15:20:00.190 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:20:00.215 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1458
+26-Mar-2026 15:30:00.010 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:30:00.057 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:30:00.102 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:30:00.137 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 15:30:00.138 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:30:00.195 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 15:30:00.195 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:30:00.221 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1459
+26-Mar-2026 15:40:00.012 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:40:00.053 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:40:00.096 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:40:00.159 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 15:40:00.160 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:40:00.225 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 15:40:00.226 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:40:00.262 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1460
+26-Mar-2026 15:50:00.013 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:50:00.060 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:50:00.104 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:50:00.148 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 15:50:00.150 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:50:00.205 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 15:50:00.206 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 15:50:00.234 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1461
+26-Mar-2026 16:00:00.014 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:00:00.045 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:00:00.083 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:00:00.121 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 16:00:00.122 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:00:00.179 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 16:00:00.180 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:00:00.205 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1462
+26-Mar-2026 16:10:00.017 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:10:00.049 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:10:00.079 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:10:00.127 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.getPurchasedTickets Retrieved 0 purchased tickets
+26-Mar-2026 16:10:00.128 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:10:00.177 INFO [pool-1-thread-1] com.lottery.db.LotteryTicketDAO.resetTicketsForNewRound Reset tickets for new round, rows affected: 1000
+26-Mar-2026 16:10:00.178 INFO [pool-1-thread-1] com.lottery.db.DatabaseConfig.getConnection Attempting to connect with URL: jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=false;trustServerCertificate=true;
+26-Mar-2026 16:10:00.203 INFO [pool-1-thread-1] com.lottery.service.DrawService.performDraw Draw completed for round: 1463

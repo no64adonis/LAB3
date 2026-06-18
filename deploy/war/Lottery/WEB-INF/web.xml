@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Lottery</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.xhtml</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.xhtml</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.lottery.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.lottery.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserManagementServlet</servlet-name>
+    <servlet-class>com.lottery.UserManagementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserManagementServlet</servlet-name>
+    <url-pattern>/userManagement</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ExportUsersServlet</servlet-name>
+    <servlet-class>com.lottery.ExportUsersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExportUsersServlet</servlet-name>
+    <url-pattern>/exportUsers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ChangePasswordServlet</servlet-name>
+    <servlet-class>com.lottery.ChangePasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordServlet</servlet-name>
+    <url-pattern>/changePassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminLotteryServlet</servlet-name>
+    <servlet-class>com.lottery.AdminLotteryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLotteryServlet</servlet-name>
+    <url-pattern>/adminLottery</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserLotteryServlet</servlet-name>
+    <servlet-class>com.lottery.UserLotteryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserLotteryServlet</servlet-name>
+    <url-pattern>/userLottery</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.lottery.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PasswordResetServlet</servlet-name>
+    <servlet-class>com.lottery.PasswordResetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PasswordResetServlet</servlet-name>
+    <url-pattern>/passwordReset</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HomepageServlet</servlet-name>
+    <servlet-class>com.lottery.HomepageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomepageServlet</servlet-name>
+    <url-pattern>/homepage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GoogleOAuthServlet</servlet-name>
+    <servlet-class>com.lottery.GoogleOAuthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoogleOAuthServlet</servlet-name>
+    <url-pattern>/oauth/google/callback</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SetPasswordServlet</servlet-name>
+    <servlet-class>com.lottery.SetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetPasswordServlet</servlet-name>
+    <url-pattern>/setPassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PaymentsServlet</servlet-name>
+    <servlet-class>com.lottery.PaymentsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentsServlet</servlet-name>
+    <url-pattern>/payments</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TopUpServlet</servlet-name>
+    <servlet-class>com.lottery.TopUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TopUpServlet</servlet-name>
+    <url-pattern>/topup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PaymentMethodManagementServlet</servlet-name>
+    <servlet-class>com.lottery.PaymentMethodManagementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentMethodManagementServlet</servlet-name>
+    <url-pattern>/paymentMethodManagement</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminTransactionServlet</servlet-name>
+    <servlet-class>com.lottery.AdminTransactionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminTransactionServlet</servlet-name>
+    <url-pattern>/adminTransactions</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminProfileServlet</servlet-name>
+    <servlet-class>com.lottery.AdminProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminProfileServlet</servlet-name>
+    <url-pattern>/adminProfile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MyTicketsServlet</servlet-name>
+    <servlet-class>com.lottery.MyTicketsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyTicketsServlet</servlet-name>
+    <url-pattern>/myTickets</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PriceManagementServlet</servlet-name>
+    <servlet-class>com.lottery.PriceManagementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PriceManagementServlet</servlet-name>
+    <url-pattern>/priceManagement</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>com.lottery.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/profile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TicketPurchaseServlet</servlet-name>
+    <servlet-class>com.lottery.TicketPurchaseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TicketPurchaseServlet</servlet-name>
+    <url-pattern>/ticketPurchase</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+    <session-timeout>30</session-timeout>
+    <cookie-config>
+      <http-only>true</http-only>
+      <secure>true</secure>
+      <same-site>Strict</same-site>
+    </cookie-config>
+  </session-config>
+  
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error/404.jsp</location>
+  </error-page>
+  
+  <error-page>
+    <error-code>500</error-code>
+    <location>/error/500.jsp</location>
+  </error-page>
+</web-app>

@@ -1,0 +1,155 @@
+
+
+.dashboard-page .dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.dashboard-page .content-wrapper {
+  display: flex;
+  flex: 1;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.dashboard-page .main-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.dashboard-page .sidebar {
+  height: 100%;
+  width: 250px;
+  flex-shrink: 0;
+  padding: 20px;
+}
+
+.dashboard-page .container {
+  flex: 1;
+  margin: 0;
+  padding: 20px;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .ticket-table,
+  .ticket-table tbody {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ticket-table thead {
+    display: none;
+  }
+
+  .ticket-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border: 1px solid #3a3f5a;
+    border-radius: 8px;
+    background-color: #2a2d42;
+    padding: 12px;
+    gap: 0;
+  }
+
+  .ticket-table td {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .ticket-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #ffc107;
+    font-size: 0.8em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  
+  .ticket-table td.ticket-numbers-cell,
+  .ticket-table td[data-label="Action"],
+  .ticket-table td[data-label="Actions"] {
+    width: 100%;
+  }
+
+  
+  .ticket-table td[data-label="Select"] {
+    display: none;
+  }
+
+  
+  .ticket-table.compact-card td.ticket-numbers-cell {
+    width: 33.33%;
+  }
+
+  
+  .ticket-table.purchase-card td.ticket-numbers-cell {
+    width: 40%;
+  }
+  .ticket-table.purchase-card td {
+    width: 20%;
+  }
+  .ticket-table.purchase-card td[data-label="Action"] {
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-page .container {
+    padding: 0 !important;
+  }
+
+  .dashboard-page .header h1 {
+    font-size: 1.3em;
+  }
+
+  
+  .ticket-table td {
+    width: 50%;
+  }
+
+  .ticket-table td.ticket-numbers-cell,
+  .ticket-table td[data-label="Action"],
+  .ticket-table td[data-label="Actions"] {
+    width: 100%;
+  }
+
+  
+  .ticket-table.compact-card td.ticket-numbers-cell {
+    width: 50%;
+  }
+  .ticket-table.compact-card td {
+    width: 25%;
+  }
+
+  
+  .ticket-table.purchase-card td {
+    width: 50%;
+  }
+  .ticket-table.purchase-card td.ticket-numbers-cell {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-page .header h1 {
+    font-size: 0.95em;
+  }
+}

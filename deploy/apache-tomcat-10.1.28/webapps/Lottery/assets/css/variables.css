@@ -1,0 +1,19 @@
+:root {
+  --bg-deep-1: #111122;
+  --bg-deep-2: #1e1e3f;
+  --bg-primary: #1a1a2e;
+  --bg-surface: #222538;
+  --bg-card-1: #2a2c42;
+  --bg-card-2: #1e2030;
+  --border-color: #3a3f5a;
+  --accent: #ffc107;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b0;
+  --header-bg: rgba(0, 0, 0, 0.3);
+  --sidebar-bg: rgba(0, 0, 0, 0.3);
+  --danger: #ff5252;
+  --danger-alt: #dc3545;
+  --success: #28a745;
+  --info: #17a2b8;
+  --font-stack: "Poppins", "Montserrat", Arial, sans-serif;
+}

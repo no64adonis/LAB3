@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:18 +0700] "GET /Lottery/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/assets/css/userLottery.css HTTP/1.1" 200 762
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/assets/components/DatePicker/datepicker-theme.css HTTP/1.1" 200 3872
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/assets/css/variables.css HTTP/1.1" 200 497
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/assets/css/lottery-style.css?v=1779879859000 HTTP/1.1" 200 40110
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/assets/components/DatePicker/flatpickr.min.css HTTP/1.1" 200 15942
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/assets/components/LotteryCompanySelector/companySelector.js?v=1779879859000 HTTP/1.1" 200 14696
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/assets/components/DatePicker/datepicker-init.js HTTP/1.1" 200 439
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/assets/components/DatePicker/flatpickr.min.js HTTP/1.1" 200 50641
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /Lottery/homepage HTTP/1.1" 200 46160
+0:0:0:0:0:0:0:1 - - [27/May/2026:18:04:19 +0700] "GET /favicon.ico HTTP/1.1" 200 21630

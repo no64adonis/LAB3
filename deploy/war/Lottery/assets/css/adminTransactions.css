@@ -1,0 +1,244 @@
+
+
+.search-box {
+  background: linear-gradient(135deg, #2a2c42, #1e2030);
+  border: 1px solid #3a3f5a;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-box h3 {
+  color: #ffc107 !important;
+  margin-top: 0;
+}
+
+.search-form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.search-form input[type="text"],
+.search-form input[type="date"],
+.search-form select {
+  padding: 10px;
+  border: 1px solid #3a3f5a;
+  border-radius: 8px;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+.search-form .lottery-btn,
+.search-form button.lottery-btn {
+  padding: 8px 15px;
+  border: 1px solid #3a3f5a;
+  border-radius: 20px;
+  background-color: #222538;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 36px;
+  line-height: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: none;
+}
+
+.search-form .lottery-btn:hover,
+.search-form button.lottery-btn:hover {
+  background-color: #ffc107;
+  color: #1a1a2e;
+  transform: translateY(-2px);
+}
+
+.ticket-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #222538;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-table th,
+.ticket-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #3a3f5a;
+}
+
+.ticket-table th {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffc107;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 5px;
+}
+
+.pagination a {
+  padding: 8px 12px;
+  background-color: #222538;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #3a3f5a;
+  transition: all 0.3s ease;
+}
+
+.pagination a:hover,
+.pagination a.active {
+  background-color: #ffc107;
+  color: #1a1a2e;
+}
+
+.pagination .lottery-btn,
+.pagination a.lottery-btn {
+  padding: 8px 15px;
+  border: 1px solid #3a3f5a;
+  border-radius: 20px;
+  background-color: #222538;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 36px;
+  line-height: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transform: none;
+}
+
+.pagination .lottery-btn:hover,
+.pagination a.lottery-btn:hover,
+.pagination .lottery-btn.active,
+.pagination a.lottery-btn.active {
+  background-color: #ffc107;
+  color: #1a1a2e;
+  transform: translateY(-2px);
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #a0a0b0;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .ticket-table,
+  .ticket-table tbody {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ticket-table thead {
+    display: none;
+  }
+
+  .ticket-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border: 1px solid #3a3f5a;
+    border-radius: 8px;
+    background-color: #2a2d42;
+    padding: 12px;
+    gap: 0;
+  }
+
+  .ticket-table td {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .ticket-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #ffc107;
+    font-size: 0.8em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    padding: 15px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start !important;
+  }
+
+  .transactions-form-container {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  
+  .ticket-table td {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-box {
+    padding: 8px;
+    border-radius: 6px;
+  }
+
+  .ticket-table {
+    font-size: 0.85em;
+  }
+
+  .btn {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+}

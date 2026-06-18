@@ -1,0 +1,126 @@
+
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-section {
+    background: linear-gradient(135deg, #2a2c42, #1e2030);
+    border: 1px solid #3a3f5a;
+    border-radius: 15px;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3a3f5a;
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.profile-section .form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.profile-section .btn {
+    background-color: #222538;
+    color: #ffffff;
+}
+
+.profile-section .btn:hover {
+    background-color: #ffc107;
+    color: #1a1a2e;
+}
+
+.password-hint {
+    color: #a0a0b0;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.verification-section {
+    background: rgba(33, 150, 243, 0.1);
+    border: 1px solid rgba(33, 150, 243, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.verification-section p {
+    color: #bbdefb;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        left: -280px !important;
+        width: 260px !important;
+        height: 100vh !important;
+        z-index: 9999 !important;
+        background-color: #1a1a2e !important;
+        border-right: 1px solid #3a3f5a !important;
+        padding: 20px !important;
+        transition: left 0.3s ease !important;
+        overflow-y: auto !important;
+        box-shadow: none !important;
+        flex-shrink: unset !important;
+    }
+
+    .sidebar.mobile-open {
+        left: 0 !important;
+        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+
+    .content-wrapper {
+        flex-direction: column !important;
+        overflow: visible !important;
+        height: auto !important;
+    }
+
+    .main-content {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    .profile-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .profile-section {
+        padding: 15px 20px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 5px;
+    }
+
+    .profile-section {
+        padding: 10px 12px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+    }
+
+    .profile-section h2 {
+        font-size: 1.05em;
+        margin-bottom: 10px;
+    }
+
+    .verification-section {
+        padding: 8px;
+    }
+}

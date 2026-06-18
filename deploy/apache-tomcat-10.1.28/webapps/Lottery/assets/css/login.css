@@ -1,0 +1,14 @@
+
+.form-group input {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.85em;
+    }
+}

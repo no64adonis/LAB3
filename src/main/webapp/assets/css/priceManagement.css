@@ -1,0 +1,61 @@
+
+
+.price-form {
+  background: linear-gradient(135deg, #2a2c42, #1e2030);
+  border: 1px solid #3a3f5a;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.price-form h3 {
+  color: #ffc107 !important;
+  margin-top: 0;
+}
+
+.price-form input[type="number"] {
+  width: 150px;
+  padding: 12px;
+  border: 1px solid #3a3f5a;
+  border-radius: 8px;
+  margin-right: 10px;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.price-form input[type="number"]:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.2);
+}
+
+@media (max-width: 768px) {
+  .price-form {
+    padding: 15px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-form {
+    padding: 8px;
+    border-radius: 6px;
+  }
+
+  .price-form input[type="number"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+    padding: 6px;
+    font-size: 0.8em;
+  }
+
+  .save-btn {
+    padding: 6px 16px;
+    height: 36px;
+    font-size: 11px;
+    width: 100%;
+  }
+}

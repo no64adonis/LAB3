@@ -1,0 +1,223 @@
+
+
+body.admin-page {
+  margin: 0;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  background-color: #1a1a2e !important;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.admin-page .dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.admin-page .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #3a3f5a;
+}
+
+.admin-page .header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #ffc107 !important;
+}
+
+.admin-page .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-page .nav-links a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.admin-page .nav-links a:hover {
+  background-color: #ffc107 !important;
+  color: #1a1a2e !important;
+}
+
+.admin-page .content-wrapper {
+  display: flex;
+  flex: 1;
+  min-height: calc(100vh - 80px);
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.admin-page .main-content {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.admin-page .main-content-inner {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.admin-page .container {
+  flex: 1;
+  margin: 0;
+  padding: 20px;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  background-color: #222538 !important;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  position: relative;
+  min-height: calc(100vh - 120px);
+}
+
+.admin-page .sidebar {
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 20px;
+  z-index: 1000;
+  border-right: 1px solid #3a3f5a;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+}
+
+.admin-page .sidebar h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #ffc107;
+  text-align: center;
+}
+
+.admin-page .sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-page .sidebar ul li {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.admin-page .sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.admin-page .sidebar ul li a:hover {
+  background-color: #ffc107;
+  color: #1a1a2e !important;
+}
+
+.admin-page .message {
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.admin-page .message.success {
+  background-color: rgba(40, 167, 69, 0.2);
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.admin-page .message.error {
+  background-color: rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.admin-page h3 {
+  color: #ffc107 !important;
+}
+
+@media (max-width: 1024px) {
+  .admin-page .sidebar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-page .sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: -280px !important;
+    width: 260px !important;
+    height: 100vh !important;
+    z-index: 9999 !important;
+    background-color: #1a1a2e !important;
+    border-right: 1px solid #3a3f5a !important;
+    padding: 20px !important;
+    transition: left 0.3s ease !important;
+    overflow-y: auto !important;
+    box-shadow: none !important;
+    flex-shrink: unset !important;
+  }
+
+  .admin-page .sidebar.mobile-open {
+    left: 0 !important;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .admin-page .mobile-menu-toggle {
+    display: flex !important;
+  }
+
+  .admin-page .container {
+    padding: 0 !important;
+  }
+
+  .admin-page .content-wrapper {
+    flex-direction: column !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .admin-page .main-content {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .admin-page .main-content-inner {
+    padding: 10px;
+  }
+
+  .admin-page .header h1 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-page .header h1 {
+    font-size: 0.95em;
+  }
+}
